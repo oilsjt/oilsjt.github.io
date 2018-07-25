@@ -1,4 +1,4 @@
-## Welkeum to GitHub Pagesupdated
+## Welkeum to GitHub Pagesupdatedopop
 
 You can use the [editor on GitHub](https://github.com/oilsjt/oilsjt.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -8,7 +8,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-{% for repository in site.github.public_repositories %}
+{% for repository in site.github.public_repositories %} 
+ {{this}}
+ {{site}}
+ {{site.github}}
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
 
