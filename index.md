@@ -12,11 +12,11 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
   * [{{ repository.name }}]({{ repository.html_url }})
 {% endfor %}
 
-{% for repository in site.github.organization_members %}
-  * [{{ repository.name }}]({{ repository.html_url }})
+{% for member in site.github.organization_members %}
+  * [{{ member.name }}]({{ member }})
 {% endfor %}
 
-
+ja
 ok
 
 
